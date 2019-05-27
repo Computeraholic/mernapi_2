@@ -1,6 +1,11 @@
 var mongoose = require('mongoose');
 var User = require('../models/User.js');
 var db = mongoose.connection;
+var express = require('Express');
+var router = express.Router();
+
+
+
 
 /* GET users listing ordered by creationdate. */
 router.get('/', function (req, res, next) {
